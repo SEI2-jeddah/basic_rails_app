@@ -1,1 +1,6 @@
 <h3>Articles#index</h3>
+
+<% @article.each do |a| %>
+  <h1><%= a.title %></h1>
+  <h3><%= a.text %></h3>
+<% end %> 
