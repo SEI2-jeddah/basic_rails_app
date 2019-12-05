@@ -3,4 +3,7 @@
 <% @article.each do |a| %>
   <h1><%= a.title %></h1>
   <h3><%= a.text %></h3>
+  <%= link_to 'show', article_path(a) %>
+  <%= link_to 'edit', edit_article_path(a) %>
+   <%= link_to 'delete', article_path(a), method: :delete %>
 <% end %> 
